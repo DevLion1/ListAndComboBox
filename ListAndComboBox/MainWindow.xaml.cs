@@ -71,4 +71,4 @@ namespace ListAndComboBox
             cmbFirstName.SelectedIndex = lbLastNames.SelectedIndex;
         }
     }
-}
+}//namespace
