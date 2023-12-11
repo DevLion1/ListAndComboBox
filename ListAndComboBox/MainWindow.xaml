@@ -1,0 +1,31 @@
+﻿<Window x:Class="ListAndComboBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ListAndComboBox"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <!-- Combo Box for First Names -->
+        <ComboBox x:Name="cmbFirstName" />
+
+        <!-- List Box for Last Names -->
+        <ListBox x:Name="lbLastNames" SelectionChanged="lbLastNames_SelectionChanged"/>
+
+        <!-- Button to Display Full Name -->
+        <Button Content="Display Full Name" Name="btnDisplayFullName" Click="btnDisplayFullName_Click"/>
+
+        <!-- Labels and Text Boxes for Adding Names -->
+        <Label Content="First Name" />
+        <TextBox x:Name="txtFirstName" />
+        <Label Content="Last Name" />
+        <TextBox x:Name="txtLastName" />
+
+        <!-- Button to Add Names -->
+        <Button x:Name="btnAddNames" Content="Add Names" Click="btnAddNames_Click"/>
+
+        <!-- Button to Remove Student -->
+        <Button x:Name="btnRemoveStudent" Content="Remove Student" Click="btnRemoveStudentAtIndex_Click"/>
+    </StackPanel>
+</Window>
